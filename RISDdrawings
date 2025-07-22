@@ -41,7 +41,7 @@ justify-content: center;
 </style>
 <body>
     <a href="#top"><img style="position: fixed; margin-left: 1160px; margin-top: 200px; z-index: 3;" width="70px" src="redarrow.gif"></a>
-    <p><a id="top" href="drawingsprints.html">back</a></p>
+    <p><a id="top" href="drawings.html">back</a></p>
   <article>
 <div class="image-container">
 <p><img src="drawing1.jpg" width="300px"></p>
@@ -170,5 +170,5 @@ justify-content: center;
 <p><img src="drawing149.jpeg" width="300px"></p>
 <p><img src="drawing150.jpeg" width="300px"></p>
   </article>
- <p><a href="drawingsprints.html">back</a></p>
+ <p><a href="drawings.html">back</a></p>
 </body>
