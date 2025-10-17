@@ -8,6 +8,7 @@
     background-image:url('backgroundforwebsite.png');
     color: white;
     font-size: 2em;
+    max-width: 1000px;
   }
   h1{
     color: black;
