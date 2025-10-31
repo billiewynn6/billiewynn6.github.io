@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<style>
+  body {
+    margin: 0px auto;
+    padding: 0 10px; 
+    background-image:url('2022background.jpeg');
+    color: white;
+    max-width: 1000px;
+  }
+  a {
+color: white;
+  }
+  h1{
+    color: black;
+  }
+  h2{
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+    font-weight: bold;
+  }
+  h3{
+    font-weight: normal;
+  }
+  article{
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+   max-width: 1000px;
+  }
+  .image-container {
+height: auto;
+display: flex;
+justify-content: center;
+gap: 10px;
+    width: 1200px;
+    flex-wrap: wrap;
+    padding-left: 35px; 
+  }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<a href="paintings.html" style="position: fixed; top: 20px; left: 20px; z-index: 9999; background-color: black; color: white; padding: 5px 10px; border-radius: 4px; text-decoration: none;">back</a>
+<a href="#top"><img style="position: fixed; margin-left: 1160px; margin-top: 200px; z-index: 3;" width="70px" src="redarrow.gif"></a>
+  <p style="position: fixed; margin-left: 30px; margin-top: 200px; z-index: 3; color: white;">
+  ordered chronologically <br>
+    (bottom is beginning, <br>
+    top is end)
+</p>
+  <article>
+    <div class="image-container">
+<p><img src="painting288.jpeg" width="400px"><br> 
+Floating over hell<br>
+47 x 27 inches<br>
+oil on canvas<br>
+2025</p>
+</body>
