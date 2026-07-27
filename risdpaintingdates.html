@@ -39,24 +39,29 @@ justify-content: center;
     flex-wrap: wrap;
     gap: 30px; 
   }
-  .year-nav {
+.year-nav {
     position: fixed;
-    left: 20px;
-    top: 200px;
-    width: 100px;
+    top: 180px;
+    left: 20px;           /* move it closer to the gallery if you like */
+    z-index: 9999;
+
+    background: black;
+    padding: 15px;
+    border-radius: 5px;
+
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    z-index: 1000;
+    gap: 20px;
 }
 
 .year-nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;   /* puts the underline back */
 }
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
+  <a href="paintings.html" style="position: fixed; top: 20px; left: 20px; z-index: 9999; background-color: black; color: white; padding: 5px 10px; border-radius: 4px; text-decoration: none;">back</a>
 <div class="year-nav">
     <a href="#painting172.jpeg">2025</a>
     <a href="#painting14.jpg">2024</a>
