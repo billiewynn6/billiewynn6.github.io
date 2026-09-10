@@ -1,84 +1,177 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-  body {
-    margin: 0px auto;
+
+body {
+    margin: 0 auto;
     padding: 0 10px;
-    background-image:url('2022background.jpeg');
+    background-image: url('2022background.jpeg');
     color: white;
     max-width: 1000px;
-  }
-  a {
-color: white;
-  }
-  h1{
-    color: black;
-  }
-  h2{
+}
+
+a {
     color: white;
-  }
-  ul {
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: white;
+}
+
+ul {
     list-style-type: none;
     font-weight: bold;
-  }
-  h3{
+}
+
+h3 {
     font-weight: normal;
-  }
-  article{
+}
+
+article {
     background-color: black;
-    margin: 10px; 
-    padding: 10px; 
+    margin: 10px;
+    padding: 10px;
     border-radius: 5px;
-    max-width: 1000px;
-  }
-  .image-container {
-height: auto;
-display: flex;
-justify-content: center;
-    gap: 10px;
-    max-width: 1200px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-  }
+    gap: 20px;
+}
+
+.image-container p {
+    width: 400px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.top-arrow {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 70px;
+    z-index: 3;
+}
+
+.chronological-note {
+    position: fixed;
+    left: 20px;
+    top: 180px;
+    z-index: 3;
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 60px 5px 0 5px;
+    }
+
+    article {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .image-container {
+        gap: 20px;
+    }
+
+    .image-container p {
+        width: 100%;
+    }
+
+    .top-arrow {
+        width: 50px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .chronological-note {
+        display: none;
+    }
+
+}
+
 </style>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
 <body>
-    <a href="#top"><img style="position: fixed; margin-left: 1160px; margin-top: 200px; z-index: 3;" width="70px" src="redarrow.gif"></a>
-    <p><a id="top" href="drawings.html">back</a></p>
-  <article>
+
+<a href="paintings.html" class="back-button">back</a>
+
+<a href="#top">
+    <img class="top-arrow" src="redarrow.gif">
+</a>
+
+<article>
+
 <div class="image-container">
-<p><img src="painting201.jpeg" width="300px"></p>
-<p><img src="painting202.jpeg" width="300px"></p>
-<p><img src="painting257.jpeg" width="300px"></p>
-<p><img src="painting260.jpeg" width="300px"></p>
-<p><img src="painting259.jpeg" width="300px"></p>
-<p><img src="painting265.jpeg" width="300px"></p>
-<p><img src="painting213.jpeg" width="300px"></p>
-<p><img src="painting214.jpeg" width="300px"></p>
-<p><img src="painting215.jpeg" width="300px"></p>
-<p><img src="painting216.jpeg" width="300px"></p>
-<p><img src="painting217.jpeg" width="300px"></p>
-<p><img src="painting218.jpeg" width="300px"></p>
-<p><img src="painting219.jpeg" width="300px"></p>
-<p><img src="painting220.jpeg" width="300px"></p>
-<p><img src="painting221.jpeg" width="300px"></p>
-<p><img src="painting222.jpeg" width="300px"></p>
-<p><img src="painting223.jpeg" width="300px"></p>
-<p><img src="painting224.jpeg" width="300px"></p>
-<p><img src="painting226.jpeg" width="300px"></p>
-<p><img src="painting227.jpeg" width="300px"></p>
-<p><img src="painting228.jpeg" width="300px"></p>
-<p><img src="painting229.jpeg" width="300px"></p>
-<p><img src="painting230.jpeg" width="300px"></p>
-<p><img src="painting231.jpeg" width="300px"></p>
-<p><img src="painting232.jpeg" width="300px"></p>
-<p><img src="painting233.jpeg" width="300px"></p>
-<p><img src="painting234.jpeg" width="300px"></p>
-<p><img src="painting235.jpeg" width="300px"></p>
-<p><img src="painting236.jpeg" width="300px"></p>
-<p><img src="painting237.jpeg" width="300px"></p>
-<p><img src="painting238.jpeg" width="300px"></p>
-<p><img src="painting239.jpeg" width="300px"></p>
-<p><img src="painting240.jpeg" width="300px"></p>
-<p><img src="painting241.jpeg" width="300px"></p>
+```html
+<p><img src="painting201.jpeg"></p>
+<p><img src="painting202.jpeg"></p>
+<p><img src="painting257.jpeg"></p>
+<p><img src="painting260.jpeg"></p>
+<p><img src="painting259.jpeg"></p>
+<p><img src="painting265.jpeg"></p>
+<p><img src="painting213.jpeg"></p>
+<p><img src="painting214.jpeg"></p>
+<p><img src="painting215.jpeg"></p>
+<p><img src="painting216.jpeg"></p>
+<p><img src="painting217.jpeg"></p>
+<p><img src="painting218.jpeg"></p>
+<p><img src="painting219.jpeg"></p>
+<p><img src="painting220.jpeg"></p>
+<p><img src="painting221.jpeg"></p>
+<p><img src="painting222.jpeg"></p>
+<p><img src="painting223.jpeg"></p>
+<p><img src="painting224.jpeg"></p>
+<p><img src="painting226.jpeg"></p>
+<p><img src="painting227.jpeg"></p>
+<p><img src="painting228.jpeg"></p>
+<p><img src="painting229.jpeg"></p>
+<p><img src="painting230.jpeg"></p>
+<p><img src="painting231.jpeg"></p>
+<p><img src="painting232.jpeg"></p>
+<p><img src="painting233.jpeg"></p>
+<p><img src="painting234.jpeg"></p>
+<p><img src="painting235.jpeg"></p>
+<p><img src="painting236.jpeg"></p>
+<p><img src="painting237.jpeg"></p>
+<p><img src="painting238.jpeg"></p>
+<p><img src="painting239.jpeg"></p>
+<p><img src="painting240.jpeg"></p>
+<p><img src="painting241.jpeg"></p>
+
   </article>
  <p><a href="drawings.html">back</a></p>
 </body>
