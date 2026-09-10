@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+    margin: 0 auto;
+    padding: 0 10px;
+    background-image: url('2022background.jpeg');
+    color: white;
+    max-width: 1000px;
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+article {
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-container p {
+    width: 400px;
+    max-width: 100%;
+    margin: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.top-arrow {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 70px;
+    z-index: 3;
+}
+
+.chronological-note {
+    position: fixed;
+    left: 20px;
+    top: 180px;
+    z-index: 3;
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 60px 5px 0 5px;
+    }
+
+    article {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .image-container {
+        gap: 20px;
+    }
+
+    .image-container p {
+        width: 100%;
+    }
+
+    .top-arrow {
+        width: 50px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .chronological-note {
+        display: none;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="paintings.html" class="back-button">back</a>
+
+<a href="#top">
+    <img class="top-arrow" src="redarrow.gif">
+</a>
+
+<article>
+
+<div class="image-container">
+
+<p><img src="painting241.jpeg"></p>
+
+   </article>
+ <p><a href="drawings.html">back</a></p>
+</body>
