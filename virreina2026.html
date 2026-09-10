@@ -2,9 +2,11 @@
 <html>
 
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
 body {
     margin: 0 auto;
     padding: 0 10px;
@@ -80,7 +82,15 @@ article {
     z-index: 3;
 }
 
-@media (max-width:700px) {
+.chronological-note {
+    position: fixed;
+    left: 20px;
+    top: 180px;
+    z-index: 3;
+    color: white;
+}
+
+@media (max-width: 700px) {
 
     body {
         padding: 60px 5px 0 5px;
@@ -101,8 +111,16 @@ article {
 
     .top-arrow {
         width: 50px;
+        right: 10px;
+        bottom: 10px;
     }
+
+    .chronological-note {
+        display: none;
+    }
+
 }
+
 </style>
 
 </head>
@@ -115,6 +133,11 @@ article {
     <img class="top-arrow" src="redarrow.gif">
 </a>
 
+<p class="chronological-note">
+    ordered chronologically <br>
+    (bottom is beginning, <br>
+    top is end)
+</p>
 
 <article>
 
